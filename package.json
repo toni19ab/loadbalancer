@@ -1,0 +1,42 @@
+{
+  "name": "balanceyourload",
+  "version": "1.0.0",
+  "description": "I dag skal vi kigge på load balancing, der samtidig er jeres næste aflevering. Vi skal lave en simpel load balancer, baseret på Round Robin-metoden, der ligeligt uddeler requests til serverne.\r Vi gør det her med en http-server, og bruger derfor to komponenter til at bygge den: **node-http-proxy** (https://github.com/nodejitsu/node-http-proxy), som er en programmerbar HTTP-proxy bibliotek og **seaport**, der er en service register og kan bruges til at dele requests ud til en given port.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seaport": "seaport",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "core-util-is": "^1.0.2",
+    "defined": "^0.0.0",
+    "event-stream": "^3.0.20",
+    "http-proxy": "^1.18.1",
+    "indexof": "^0.0.1",
+    "inherits": "^1.0.2",
+    "isarray": "^0.0.1",
+    "merge": "^1.1.3",
+    "object-keys": "^0.5.1",
+    "optimist": "^0.3.7",
+    "pause-stream": "^0.0.11",
+    "readable-stream": "^1.0.34",
+    "seaport": "^2.0.9",
+    "secure-peer": "^0.2.1",
+    "stream-combiner": "^0.0.4",
+    "string_decoder": "^0.10.31",
+    "through": "^2.3.8",
+    "wordwrap": "^0.0.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DIS-2020/loadBalancer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DIS-2020/loadBalancer/issues"
+  },
+  "homepage": "https://github.com/DIS-2020/loadBalancer#readme"
+}
